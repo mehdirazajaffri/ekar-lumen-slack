@@ -22,7 +22,7 @@ class Helpers
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => json_encode($response),
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Bearer xoxb-793684583653-780912309122-kJiOWIGzLWJCOJ4uhabZ7Uq3",
+                "Authorization: Bearer xoxb-793684583653-780912309122-j0TjsxQKvbKx2J1RjuY6pUsk",
                 "Content-Type: application/json",
             ),
         ));
