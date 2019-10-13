@@ -41,7 +41,7 @@ class Helpers
 
     public static function getNumberFromString($string)
     {
-        $int = intval(preg_replace('/[^0-9]+/', '', $string), 10);
+        $int = (int) filter_var($string, FILTER_SANITIZE_NUMBER_INT);
         return $int;
     }
 }
