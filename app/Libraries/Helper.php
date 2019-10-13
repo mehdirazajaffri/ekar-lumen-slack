@@ -22,7 +22,7 @@ class Helpers
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => json_encode($response),
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Bearer xoxb-793684583653-780912309122-kVuw7qkQx6jGtfjw5TwTU14r",
+                "Authorization: Bearer xoxb-793684583653-780912309122-kJiOWIGzLWJCOJ4uhabZ7Uq3",
                 "Content-Type: application/json",
             ),
         ));
@@ -35,11 +35,12 @@ class Helpers
         if ($err) {
             echo "cURL Error #:" . $err;
         } else {
-            echo "";
+            echo $response;
         }
     }
 
-    public static function getNumberFromString($string){
+    public static function getNumberFromString($string)
+    {
         $int = intval(preg_replace('/[^0-9]+/', '', $string), 10);
         return $int;
     }

@@ -16,6 +16,9 @@ class Controller extends BaseController
             'event.type' => 'required',
             'event.channel' => 'required'
         ]);
+
+        error_log(json_encode($request->all()));
+
         // Normalizing payLoad
         $payload = $request->get('event');
 
@@ -24,9 +27,10 @@ class Controller extends BaseController
 
             if (strpos($text, 'solve for') !== false) {
                 // Remove string before the number.
-                $text = substr($text,strpos($text, 'solve for'));
+                $text = substr($text, strpos($text, 'solve for'));
                 // get integer value of number from the string
                 $num = Helpers::getNumberFromString($text);
+
                 if ($num > 0 && $num < 1000) {
                     $sum = Helpers::euler($num);
                     // Time to Send Response
