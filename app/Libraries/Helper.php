@@ -22,7 +22,7 @@ class Helpers
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => json_encode($response),
             CURLOPT_HTTPHEADER => array(
-                "Authorization: " . env("BOT_TOKEN"),
+                "Authorization: Bearer " . env("BOT_TOKEN"),
                 "Content-Type: application/json",
             ),
         ));

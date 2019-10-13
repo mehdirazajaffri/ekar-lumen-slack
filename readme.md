@@ -18,6 +18,6 @@ You can type anything after mentioning bot , you text message must contain a num
 
 ## Setup .env
 
-BOT_TOKEN=Bearer xoxb-793684583653-780912309122-RQywBcBMnpM5ZeCAgJYeE6567
+BOT_TOKEN=xoxb-793684583653-780912309122-RQywBcBMnpM5ZeCAgJYeE6567
 
 I'll give you token in the email...
