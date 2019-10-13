@@ -1,21 +1,17 @@
-# Lumen PHP Framework
+# Ekar Slack Integration
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+Lumen based API, Slack bot is integrated with a Lumen API that solves Euler Problem.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## How to use it
 
-## Official Documentation
+Currently application is only installed at my workspace mehdirazajaffri@gmail.com, so you would be needing my credentials to Play around it.
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+## How it works
 
-## Security Vulnerabilities
+At any channel in your slack, just mention my bot like this
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+hey @ekarslack solve for 99
 
-## License
+Solve keyword is neccessary to intimate bot..
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+You can type anything after mentioning bot , you text message must contain a number and also a keyword "solve".

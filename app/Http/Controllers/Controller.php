@@ -24,10 +24,11 @@ class Controller extends BaseController
 
         if ($payload['type'] == "app_mention") {
             $text = $payload['text'];
+            $keyword = "solve";
 
-            if (strpos($text, 'solve for') !== false) {
+            if (strpos($text, $keyword) !== false) {
                 // Remove string before the number.
-                $text = substr($text, strpos($text, 'solve for'));
+                $text = substr($text, strpos($text, $keyword));
                 // get integer value of number from the string
                 $num = Helpers::getNumberFromString($text);
 
