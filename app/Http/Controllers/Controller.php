@@ -10,6 +10,7 @@ class Controller extends BaseController
 {
     public function ekar(Request $request)
     {
+        error_log(json_encode($request->all()));
         return "Good";
     }
 }
